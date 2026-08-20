@@ -15,7 +15,7 @@ let getData = async (event) => {
         form.reset();
     }else {
         try {
-            let res = await fetch("http://localhost:3000/register", {
+            let res = await fetch("https://myprojectbackend-1-ih5s.onrender.com/register", {
                 method : "POST",
                 headers : {
                     "Content-Type" : "application/json"
