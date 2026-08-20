@@ -1,0 +1,19 @@
+As 60 hours, 50 hours already done.
+
+54 hours
+
+remaining 6 hours is used for the completion of ibm certfication.
+in the class itself, yo have to complete the certfication and submit the form n the class only.
+
+Website : a collection of web pages.
+1 web page means 1 html file
+
+Always give the main file html is index.html
+Signup, login or products as our index.html file.
+
+When to do the sign up part?
+1. every field must have a relevant data.  (frontend)
+2. password and confirm password must match and have proper format. (frontend)
+3. email is already present in system then don't do sign up. (backend)
+
+"         K         b      " : "K        b"
