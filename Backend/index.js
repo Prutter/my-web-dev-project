@@ -18,13 +18,15 @@ myapp.post("/register", (req, res) => {
         }
         res.status(309).send(resObj)
     }else {
+        let userObj = {
+            id : new Date(), ...req.body
+        }
         let resObj = {
             success : true,
             message : "Registration Done.",
-            data : {
-                id : new Date(), ...req.body
-            }
+            data : userObj
         }
+        users.push(userObj)
         res.status(201).send(resObj)
     }
 })
@@ -45,6 +47,10 @@ myapp.post("/login", (req, res) => {
         }
         res.status(404).send(resObj)
     }
+})
+
+myapp.get("/users", (req, res) => {
+    res.status(200).send(users);
 })
 
 myapp.listen(PORT, () => {
